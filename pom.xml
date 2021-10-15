@@ -29,6 +29,17 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+                 <cloudHubDeployment>
+                    <muleVersion>4.3.0</muleVersion>
+			      <username>naishagupta1607</username>
+			      <password>Mulesoft@2021</password>
+			      <applicationName>getweather-service</applicationName>
+			      <environment>Sandbox</environment>   
+			      <workers>1</workers>
+			      <workerType>MICRO</workerType>
+                </cloudHubDeployment>
+               </configuration>
 			</plugin>
 		</plugins>
 	</build>
